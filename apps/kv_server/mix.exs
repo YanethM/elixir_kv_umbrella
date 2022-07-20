@@ -11,6 +11,7 @@ defmodule KVServer.MixProject do
       lockfile: "../../mix.lock",
       elixir: "~> 1.13",
       start_permanent: Mix.env() == :prod,
+      xref: [exclude: [KV.Router]],
       deps: deps()
     ]
   end
