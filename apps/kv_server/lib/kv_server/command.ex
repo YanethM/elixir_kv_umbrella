@@ -1,5 +1,5 @@
 defmodule KVServer.Command do
- 
+
   def parse(line) do
     case String.split(line) do
       ["CREATE", bucket] -> {:ok, {:create, bucket}}
